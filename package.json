@@ -1,0 +1,31 @@
+{
+  "name": "graphql-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist --source-maps",
+    "start": "nodemon src/index.js --exec babel-node",
+    "serve": "node dist/index.js",
+    "clean": "rimraf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.11.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "graphql-tools": "^6.2.3",
+    "mongoose": "^5.10.7",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "rimraf": "^3.0.2"
+  }
+}
